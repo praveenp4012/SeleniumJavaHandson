@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="26" total="27" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-13T22:35:18 IST" name="Default suite" finished-at="2021-03-13T22:35:18 IST" duration-ms="62">
+  <suite started-at="2021-03-18T21:41:14 IST" name="Default suite" finished-at="2021-03-18T21:41:14 IST" duration-ms="72">
     <groups>
     </groups>
-    <test started-at="2021-03-13T22:35:18 IST" name="Default test" finished-at="2021-03-13T22:35:18 IST" duration-ms="62">
-      <class name="com.java.math.MultiScenarios">
-        <test-method signature="sampleRun()[pri:0, instance:com.java.math.MultiScenarios@6b8ca3c8]" started-at="2021-03-13T22:35:18 IST" name="sampleRun" finished-at="2021-03-13T22:35:18 IST" duration-ms="15" status="PASS">
+    <test started-at="2021-03-18T21:41:14 IST" name="Default test" finished-at="2021-03-18T21:41:14 IST" duration-ms="72">
+      <class name="com.java.math.MultiScenarios1">
+        <test-method signature="localDate2()[pri:0, instance:com.java.math.MultiScenarios1@55b53d44]" started-at="2021-03-18T21:41:14 IST" name="localDate2" finished-at="2021-03-18T21:41:14 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sampleRun -->
-      </class> <!-- com.java.math.MultiScenarios -->
+        </test-method> <!-- localDate2 -->
+      </class> <!-- com.java.math.MultiScenarios1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
