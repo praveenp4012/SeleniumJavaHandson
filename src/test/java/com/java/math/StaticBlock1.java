@@ -30,7 +30,7 @@ public class StaticBlock1 {
 	//static int b;
 	
 	public static void main(String[] args) {
-		b=45;
+	//	b=45;
 		
 		System.out.println("Value is " + a);
 		System.out.println("Main Method");

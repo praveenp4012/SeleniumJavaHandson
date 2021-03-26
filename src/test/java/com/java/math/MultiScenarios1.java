@@ -3,6 +3,7 @@ package com.java.math;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class MultiScenarios1 {
@@ -62,6 +63,25 @@ public class MultiScenarios1 {
 		String ld = LocalDate.of(year, month, day).getDayOfWeek().toString();
 		
 		System.out.println(ld);
+		
+	}
+	
+	@Test(dataProvider="getData")
+	public void dataProviderDemo(String user, String pass) {
+		System.out.println(user);
+		System.out.println(pass);
+	}
+	
+	@DataProvider(name="getData")
+	public Object[][] getTestData() {
+		Object[][] obj = new Object[2][2];
+		
+		obj[0][0] = "USER1";
+		obj[0][1] = "PASS1";
+		obj[1][0] = "USER2";
+		obj[1][1] = "PASS2";
+		
+		return obj;
 		
 	}
 
