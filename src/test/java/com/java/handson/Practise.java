@@ -1,34 +1,52 @@
 package com.java.handson;
 
-class Parent {
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
 
-	public void parent1() {
+class Amount {
 
-		System.out.println("Parent1");
+	String curr;
+	int amount;
+
+	public Amount(String curr, int amount) {
+
+		this.curr = curr;
+		this.amount = amount;
 
 	}
-
-	
 }
 
-public class Practise extends Parent {
+class AmountAdder {
 
-	public static void main(String[] args) {
-		Parent p1 = new Practise();
-		p1.parent1();
-		p1.parent2();
+	public static Amount addAmounts(Amount am1, Amount am2) throws Exception {
+		if (!am1.curr.equals(am2.curr)) {
+			throw new Exception("Do not match");
+		}
+
+		return new Amount(am1.curr, am1.amount + am2.amount);
 	}
 
-	public void parent1() {
+}
 
-		System.out.println("Child1");
+public class Practise {
+
+	public static void main(String[] args) throws Exception {
+
+		// AmountAdder.addAmounts(new Amount("Dllar",50), new Amount("Dollar",70));
+		// Amount a = AmountAdder.addAmounts(new Amount("Dollar",50), new
+		// Amount("Dollar",70));
+		// System.out.println(a);
+
+		int a[] = { 1, 2, 3, 4, 5 };
+		// System.out.println(a);
+		String s = Arrays.toString(a);
+		System.out.println(s);
+
+		int b[][] = { { 1, 2, 3 }, { 4, 5, 6 } };
+		String t = Arrays.deepToString(b);
+		System.out.println(t);
 
 	}
-	
-	public void parent2() {
-
-		System.out.println("Child2");
-
-	}
-
 }
