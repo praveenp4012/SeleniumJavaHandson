@@ -11,9 +11,9 @@ import java.util.regex.Pattern;
 public class RegexPatterns {
 
 	static String str = "Hello how are you";
-	static String subStr = "how";
+	static String subStr = "hey";
 	//static String actual 
-	static String replace = "where";
+	static String replace = "they";
 
 	public static void main(String[] args) {
 

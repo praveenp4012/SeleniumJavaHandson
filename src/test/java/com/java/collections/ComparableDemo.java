@@ -17,9 +17,9 @@ class Student implements Comparable<Student> {
 
 	public int compareTo(Student st) {
 
-		if (age == st.age)
+		if (roll == st.roll)
 			return 0;
-		if (age < st.age)
+		if (roll < st.roll)
 			return -1;
 
 		return 1;

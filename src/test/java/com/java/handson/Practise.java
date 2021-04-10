@@ -49,4 +49,15 @@ public class Practise {
 		System.out.println(t);
 
 	}
+	
+	public void enumSwitch() {
+		switch(Sides) {
+		
+		}
+	}	
+
+}
+
+enum Sides {
+	North,South,East,West;
 }
